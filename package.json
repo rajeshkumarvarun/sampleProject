@@ -1,0 +1,42 @@
+{
+  "name": "mocha-unit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha './*/*.test.js'",
+    "testcoverage": "nyc mocha './*/*.test.js'",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "lint": "eslint **/*.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mocha",
+    "chai"
+  ],
+  "author": "Godwin Ekuma",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.776.0",
+    "body-parser": "^1.18.3",
+    "coverage": "^0.4.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "lint": "^0.7.0",
+    "morgan": "^1.9.1",
+    "nyc": "^15.1.0",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "request": "^2.88.2",
+    "sequelize": "^5.19.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.11.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.1",
+    "sinon": "^7.5.0"
+  }
+}
